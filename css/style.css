@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: #303841;
+}
+
+.header {
+    border: 2px solid purple;
+}
+
+.header__menu {
+    color: black;
+    display: flex; /* */ /* es para que el contenido se ajuste a la pantalla y sea responsive */
+    justify-content: space-between; /*es para dividir el espacio de los elementos en igual tamaño en el contenedor */
+}
+
+.header__menu ul {
+    display: flex ;
+}
+
+.header__menu li {
+    display: inherit; /* inherit es para heredar el display del padre */
+}
+
+.header__menu a{
+    text-decoration: none;
+    color: black;
+    padding: 10px; /* es para separar cada palabra*/
+    font-weight: 700; /* Le da un grosor a la letra dependiendo del font-family*/
+    text-transform: uppercase; /* es para colocar las letras en mayúscula*/
+    
+}
+
+.header__menu a:hover {
+    background-color: darkorchid;
+    color: white;
+    border-radius: 10px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto; /* es para centrar (en este caso, el header)*/
+    color: white;
+}
+
+.banner {
+    color: white;
+    background-color:/* #ce0f3d */ #ad62aa;
+}
+
+.banner .banner__hero {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.banner__text-hero {
+    padding: 88px 0 0 80px;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.portafolio {
+    display: flex;
+    margin: 100px 0; /* se coloca 100px 0, donde 100px es en top y bottom y 0 es en left y rigth*/
+}
+
+.portafolio__box {
+    margin: 15px;
+    box-shadow: 0px 1px 8px 2px gray;
+    border-radius: 10px;
+    width: 33%;
+}
+
+.portafolio__box img {
+    border-radius: 10px;
+}
+
+.portafolio__card {
+    margin: 20px;
+    padding: 5px;
+}
+
+.portafolio__card button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px gray;
+}
+
+.tittle {
+    text-align: center;
+    border-left: 6px solid purple;
+    background-color: rgba(128, 128, 128, 0.075); /*el ultimo valor es la opacidad  */
+}
+
+.experience {
+    display: flex;
+    margin: 100px 0;
+}
+
+.experience__box {
+    margin: 15px;
+    box-shadow: 0px 1px 8px 2px lightcyan; 
+    border-radius: 10px;
+    width: 50%;
+}
+
+.experience__body {
+    box-shadow: 0px 1px 8px 2px lightcyan; 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer {
+    color: white;
+    background-color: purple;
+}
+
+.footer .footer__sections {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__sections i {
+    padding: 10px;
+}
+
+.copyright p {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
